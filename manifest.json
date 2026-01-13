@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Job Form Autofill",
+  "version": "1.0",
+  "description": "Autofill job application forms with one click",
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
